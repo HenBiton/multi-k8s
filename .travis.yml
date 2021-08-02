@@ -3,7 +3,7 @@ language: generic
 services:
   - docker
 
-befor_install:
+before_install:
   - docker build -t henbi/react-test -f ./client/Dockerfile.dev ./client
 
 script:
