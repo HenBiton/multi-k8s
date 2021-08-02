@@ -13,7 +13,7 @@ after_success:
   - docker build -t henbi/multi-client ./client
   - docker build -t henbi/multi-nginx ./nginx
   - docker build -t henbi/multi-worker ./worker
-  - docker build -t henbi/multi-servre ./server
+  - docker build -t henbi/multi-server ./server
   # Log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   # Take thos images and push them to docker hub
